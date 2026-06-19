@@ -1,0 +1,196 @@
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+/* INNER WRAPPER */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 0;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
+
+.logo:hover {
+  transform: translate3d(0, -2px, 0);
+}
+
+/* ICON */
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+/* TEXT BLOCK */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.logo-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.4px;
+}
+
+.logo-sub {
+  font-size: 11px;
+  font-weight: 700;
+  color: #f59e0b;
+  letter-spacing: 2px;
+}
+
+/* NAV (PRO ADD-ON) */
+.nav a {
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+  color: #0f172a;
+
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  color: #f59e0b;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #f59e0b;
+  transition: 0.25s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ========== TESLA STYLE BASE ========== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #0f172a;
+}
+
+/* HEADER ANIMATION (scroll shrink) */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18px);
+
+  transition: 0.3s ease;
+}
+
+.header.shrink {
+  padding: 6px 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* HERO (TESLA STYLE) */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(90deg, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.3)),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276")
+      center/cover;
+}
+
+.hero-content {
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* BUTTON (TESLA STYLE) */
+.btn {
+  background: #f59e0b;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION FADE IN */
+.section {
+  padding: 100px 0;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CARDS TESLA STYLE */
+.card {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
