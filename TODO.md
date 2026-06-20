@@ -1,0 +1,22 @@
+- [x] Modernizuoti `index.html` tekstinį turinį, nekeičiant HTML struktūros ir CSS klasių
+- [x] Atnaujinti `TODO.md` po užduoties įvykdymo
+- [x] Pilnai perkurti `index.html` struktūrą geresniam UX ir konversijai
+- [x] Pilnai atnaujinti `styles.css` pagal naują struktūrą
+- [x] Atnaujinti `script.js` (mobile nav, active link, FAQ accordion)
+- [x] Atnaujinti `TODO.md` po struktūrinio perprojektavimo
+- [x] Pagerinti kontrastą ir pašviesinti bendrą dizainą (`styles.css`)
+- [x] Perrašyti turinį profesionalesniu tonu (`index.html`)
+- [x] Pridėti rekvizitų bloką footer'yje (`index.html`)
+- [x] Atnaujinti `TODO.md` po naujų pakeitimų
+- [x] Suderinti spalvinę sistemą su logotipo palete (`styles.css`)
+- [x] Atnaujinti `TODO.md` po spalvinio atnaujinimo
+- [x] Patamsinti brand temą pagal logotipo spalvas (`styles.css`)
+- [x] Atnaujinti `TODO.md` po tamsesnės temos atnaujinimo
+- [x] Pridėti Light/Dark mode perjungimą (`index.html`, `styles.css`, `script.js`)
+- [x] Atnaujinti `TODO.md` po temos perjungimo įgyvendinimo
+- [x] Pakeisti akcentinę spalvą į vintage žydrą pagal logo (`styles.css`)
+- [x] Pakeisti šriftą į labiau kvadratinį (`index.html`, `styles.css`)
+- [x] Atnaujinti `TODO.md` po vintage žydros + šrifto pakeitimų
+- [x] Suvienodinti logo su header baru (be atskiro „langelio“) ir palikti tik subtilų glow (`styles.css`)
+- [x] Pakoreguoti šriftų dydžių hierarchiją (`styles.css`)
+- [x] Atnaujinti `TODO.md` po logo/header ir tipografijos korekcijų

@@ -3,114 +3,405 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BangaRanga LT | Elektros instaliacija</title>
-
+    <title>BangaRanga LT | Elektros sprendimai namams ir verslui</title>
+    <meta
+      name="description"
+      content="BangaRanga LT – elektros instaliacija, EV stotelių montavimas, skydų įrengimas ir patikimas pajungimas visoje Lietuvoje."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="header" id="header">
       <div class="container header-inner">
-        <a href="#" class="logo">
-          <svg class="logo-icon" viewBox="0 0 64 64">
-            <path
-              d="M32 2L6 14v18c0 14 10 27 26 30 16-3 26-16 26-30V14L32 2z"
-              fill="#f59e0b"
-            />
-            <path d="M30 18h4v14h-4z" fill="#0f172a" />
-            <path d="M30 36h4v10h-4z" fill="#0f172a" />
-          </svg>
-
-          <div class="logo-text">
-            <span class="logo-title">BangaRanga</span>
-            <span class="logo-sub">LT</span>
-          </div>
+        <a
+          href="#top"
+          class="logo"
+          aria-label="BangaRanga LT pradinis puslapis"
+        >
+          <img
+            src="images/bangaranga SVG LT.svg"
+            alt="BangaRanga LT logotipas"
+            class="logo-icon"
+          />
+          <span class="logo-copy">
+            <strong>BangaRanga LT</strong>
+            <small>Elektros sprendimai</small>
+          </span>
         </a>
 
-        <nav class="nav">
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Perjungti temą"
+            title="Perjungti Light/Dark režimą"
+          >
+            🌙 Dark
+          </button>
+
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="mainNav"
+            aria-label="Atidaryti meniu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <nav class="nav" id="mainNav" aria-label="Pagrindinis meniu">
           <a href="#services">Paslaugos</a>
-          <a href="#about">Apie</a>
-          <a href="#projects">Darbai</a>
+          <a href="#process">Eiga</a>
+          <a href="#projects">Projektai</a>
+          <a href="#faq">DUK</a>
           <a href="#contact">Kontaktai</a>
+          <a href="#contact" class="btn nav-btn">Gauti pasiūlymą</a>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="hero-overlay"></div>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-wrap">
+          <div class="hero-content">
+            <p class="pill">Patikimi elektros sprendimai namams ir verslui</p>
+            <h1 id="hero-title">
+              Elektros instaliacijos darbai, EV stotelės ir profesionalus
+              pajungimas
+            </h1>
+            <p class="hero-sub">
+              BangaRanga LT, MB teikia kokybiškas elektros instaliacijos
+              paslaugas Vilniuje ir visoje Lietuvoje. Dirbame atsakingai,
+              laikomės terminų, taikome saugos standartus ir užtikriname aiškų
+              darbų procesą nuo konsultacijos iki galutinio pridavimo.
+            </p>
 
-      <div class="container hero-content">
-        <h1>Elektros instaliacijos sprendimai</h1>
-        <p>Namams, verslui, saulės elektrinėms ir EV stotelėms</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn">Gauti pasiūlymą</a>
+              <a href="#services" class="btn ghost">Mūsų paslaugos</a>
+            </div>
 
-        <div class="hero-contacts">
-          <p>📞 +370 609 04646</p>
-          <p>✉️ albertas@banga-ranga.lt</p>
+            <div class="hero-contacts">
+              <a class="contact-chip" href="tel:+37064581816"
+                >📞 +370 645 81816</a
+              >
+              <a class="contact-chip" href="mailto:albertas@banga-ranga.lt">
+                ✉️ albertas@banga-ranga.lt
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Pagrindiniai privalumai">
+            <h2>Kodėl verta rinktis BangaRanga LT?</h2>
+            <ul>
+              <li>✅ Patirtis elektros instaliacijos ir pajungimo darbuose</li>
+              <li>
+                ✅ Tvarkingas, saugus ir standartus atitinkantis įrengimas
+              </li>
+              <li>✅ Aiški sąmata ir argumentuoti techniniai sprendimai</li>
+              <li>✅ Sprendimai pritaikyti jūsų objekto poreikiams</li>
+            </ul>
+          </aside>
         </div>
+      </section>
 
-        <a href="#contact" class="btn">Gauti pasiūlymą</a>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Paslaugos</h2>
-
-        <div class="grid">
-          <div class="card">Nauja elektros instaliacija</div>
-          <div class="card">Skydų montavimas</div>
-          <div class="card">Elektromobilių stotelės</div>
-          <div class="card">Gedimų šalinimas</div>
-          <div class="card">Saulės elektrinės</div>
-          <div class="card">Renovacija</div>
+      <section class="trust-bar section" aria-label="Pasitikėjimo rodikliai">
+        <div class="container trust-grid">
+          <article>
+            <strong>Operatyvus bendravimas</strong>
+            <p>Greitai reaguojame į užklausas ir aiškiai konsultuojame.</p>
+          </article>
+          <article>
+            <strong>Skaidrus darbų planas</strong>
+            <p>Pateikiame aiškų pasiūlymą su darbų apimtimi ir terminais.</p>
+          </article>
+          <article>
+            <strong>Kokybė ir sauga</strong>
+            <p>Dirbame laikydamiesi elektrosaugos ir kokybės reikalavimų.</p>
+          </article>
+          <article>
+            <strong>Atsakingas įgyvendinimas</strong>
+            <p>
+              Tvarkingas montavimas ir patikimas rezultatas kiekviename objekte.
+            </p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section dark">
-      <div class="container">
-        <h2>Apie mus</h2>
-        <p>
-          BangaRanga LT specializuojasi elektros instaliacijos darbuose. Dirbame
-          su gyvenamaisiais ir komerciniais objektais, nuo projektavimo iki
-          įrengimo.
-        </p>
-      </div>
-    </section>
+      <section class="section" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="services-title">Elektros darbų paslaugos</h2>
+            <p class="section-sub">
+              Teikiame profesionalias elektros instaliacijos paslaugas nuo
+              konsultacijos ir projektavimo iki montavimo, pajungimo ir
+              patikros.
+            </p>
+          </div>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Darbų sritys</h2>
-
-        <div class="grid">
-          <div class="card img-card">Namų instaliacija</div>
-          <div class="card img-card">EV stotelės</div>
-          <div class="card img-card">Skydinės</div>
-          <div class="card img-card">Saulės sistemos</div>
+          <div class="grid services-grid">
+            <article class="card">
+              <h3>Elektros instaliacija</h3>
+              <p>
+                Naujos instaliacijos įrengimas, senų tinklų atnaujinimas, vidaus
+                ir lauko taškų montavimas, apkrovų paskirstymas.
+              </p>
+            </article>
+            <article class="card">
+              <h3>EV stotelės</h3>
+              <p>
+                Elektromobilių įkrovimo stotelių parinkimas, montavimas ir
+                saugus pajungimas, įvertinant objekto elektros galią.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Skydai ir apsauga</h3>
+              <p>
+                Elektros skydų montavimas, apsauginių įtaisų parinkimas,
+                grandinių sužymėjimas ir saugaus eksploatavimo užtikrinimas.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Gedimų diagnostika</h3>
+              <p>
+                Gedimų paieška, priežasčių identifikavimas ir tvarūs remonto
+                sprendimai, užtikrinant sistemos patikimumą.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Įvado pajungimas</h3>
+              <p>
+                Įvado atvedimo ir pajungimo darbai gyvenamiesiems ir
+                komerciniams objektams pagal galiojančius techninius
+                reikalavimus.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Paruošimas saulės sistemoms</h3>
+              <p>
+                Elektros instaliacijos paruošimas saulės elektrinių
+                integracijai: kabelių trasos, skydai ir rezervai tolimesnei
+                plėtrai.
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="section dark">
-      <div class="container">
-        <h2>Kontaktai</h2>
+      <section
+        class="section dark"
+        id="process"
+        aria-labelledby="process-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <h2 id="process-title">Bendradarbiavimo eiga</h2>
+            <p class="section-sub">
+              Struktūruota darbų eiga užtikrina aiškumą, terminų laikymąsi ir
+              kokybišką rezultatą.
+            </p>
+          </div>
 
-        <div class="contact-box">
-          <p><strong>Telefonas:</strong> +370 609 04646</p>
-          <p><strong>El. paštas:</strong> albertas@banga-ranga.lt</p>
-
-          <a class="btn" href="tel:+37060904646">Skambinti</a>
-          <a class="btn outline" href="mailto:albertas@banga-ranga.lt"
-            >Rašyti</a
-          >
+          <ol class="process-list">
+            <li>
+              <span>1</span>
+              <div>
+                <h3>Poreikio aptarimas</h3>
+                <p>
+                  Telefono arba el. paštu aptariame tikslus ir techninę
+                  situaciją.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3>Objekto analizė</h3>
+                <p>
+                  Įvertiname technines galimybes ir parenkame efektyviausią
+                  sprendimą.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3>Pasiūlymas ir planavimas</h3>
+                <p>
+                  Pateikiame darbų apimtį, sąmatą, terminus ir įgyvendinimo
+                  planą.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>
+                <h3>Įgyvendinimas ir pridavimas</h3>
+                <p>
+                  Darbus atliekame tvarkingai, saugiai ir pagal sutartus kokybės
+                  kriterijus.
+                </p>
+              </div>
+            </li>
+          </ol>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="projects-title">Darbų sritys</h2>
+            <p class="section-sub">
+              Sritys, kuriose dažniausiai įgyvendiname elektros sprendimus.
+            </p>
+          </div>
+
+          <div class="grid project-grid">
+            <article class="feature">
+              <h3>Butų renovacija</h3>
+              <p>
+                Senos instaliacijos atnaujinimas, skydų modernizavimas ir naujų
+                taškų įrengimas.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Individualūs namai</h3>
+              <p>
+                Elektros instaliacija nuo nulio: vidaus tinklai, lauko
+                sprendimai, rezervai automatikai.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>EV stotelių įrengimas</h3>
+              <p>
+                Kabelių trasos, apsaugos sprendimai ir patikimas stotelių
+                pajungimas.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Komerciniai objektai</h3>
+              <p>
+                Instaliacijos ir skirstymo sprendimai biurams, dirbtuvėms ir
+                paslaugų patalpoms.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="faq-title">Dažniausiai užduodami klausimai</h2>
+            <p class="section-sub">
+              Atsakymai į svarbiausius klausimus prieš darbų pradžią.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Per kiek laiko pateikiate komercinį pasiūlymą?
+              </button>
+              <div class="faq-a">
+                <p>
+                  Dažniausiai per 1 darbo dieną po poreikio ir objekto
+                  situacijos įvertinimo.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Ar dirbate tik su gyvenamaisiais objektais?
+              </button>
+              <div class="faq-a">
+                <p>
+                  Ne. Paslaugas teikiame tiek gyvenamiesiems, tiek komerciniams
+                  objektams.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Ar padedate parinkti EV stotelę?
+              </button>
+              <div class="faq-a">
+                <p>
+                  Taip, parenkame optimalų sprendimą pagal objekto galią ir
+                  naudojimo poreikį.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <h2 id="contact-title">
+                Susisiekite dėl konsultacijos ir pasiūlymo
+              </h2>
+              <p class="section-sub">
+                Pateikite užklausą – įvertinsime poreikį, pasiūlysime techninį
+                sprendimą ir suderinsime darbų atlikimo laiką.
+              </p>
+              <div class="contact-row">
+                <a class="contact-pill" href="tel:+37064581816"
+                  >📞 +370 645 81816</a
+                >
+                <a class="contact-pill" href="mailto:albertas@banga-ranga.lt">
+                  ✉️ albertas@banga-ranga.lt
+                </a>
+              </div>
+            </div>
+
+            <div class="cta-actions">
+              <a class="btn" href="tel:+37064581816">Skambinti dabar</a>
+              <a class="btn ghost" href="mailto:albertas@banga-ranga.lt"
+                >Rašyti el. laišką</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
-      <p>© 2026 BangaRanga LT</p>
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-title">BangaRanga LT, MB</p>
+          <p>Elektros instaliacijos darbai namams ir verslui</p>
+        </div>
+        <div>
+          <p><strong>Įmonės kodas:</strong> 307724315</p>
+          <p><strong>PVM kodas:</strong> LT100020281910</p>
+          <p><strong>A/s:</strong> LT277300010203021249 (Swedbank)</p>
+        </div>
+        <div>
+          <p>
+            <strong>Adresas:</strong> Giedraičių g. 39, R53, LT-09302 Vilnius
+          </p>
+          <p><strong>Tel.:</strong> +370 645 81816</p>
+          <p><strong>Vadovas:</strong> Albert Barkovski, direktorius</p>
+        </div>
+      </div>
+      <p class="footer-copy">
+        © 2026 BangaRanga LT, MB. Visos teisės saugomos.
+      </p>
     </footer>
 
-    <script src="scrypt.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
