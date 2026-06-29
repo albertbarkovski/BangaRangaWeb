@@ -20,3 +20,9 @@
 - [x] Suvienodinti logo su header baru (be atskiro „langelio“) ir palikti tik subtilų glow (`styles.css`)
 - [x] Pakoreguoti šriftų dydžių hierarchiją (`styles.css`)
 - [x] Atnaujinti `TODO.md` po logo/header ir tipografijos korekcijų
+- [x] Pilnai atnaujinti `index.html` tekstus pagal pateiktą „Veiklos aprašymas“ informaciją
+- [x] Sutvarkyti sekcijų tekstus į aiškią, profesionalią ir nuoseklią komunikaciją
+- [x] Atnaujinti `TODO.md` po pilno tekstų pakeitimo
+- [ ] Padidinti logotipą (`styles.css`)
+- [ ] Pakeisti vizualinį stilių į rimtesnį (mažiau apvalumų, mažiau žaismingumo, solidesnės spalvos) (`styles.css`)
+- [ ] Atnaujinti `TODO.md` po stiliaus atnaujinimo

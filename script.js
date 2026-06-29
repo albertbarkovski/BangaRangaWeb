@@ -117,8 +117,12 @@
 
 // Theme toggle (Dark / Light) with persistence
 (() => {
-  const toggle = document.getElementById("themeToggle");
-  if (!toggle) return;
+  const toggles = [
+    document.getElementById("themeToggle"),
+    document.getElementById("themeToggleMobile"),
+  ].filter(Boolean);
+
+  if (!toggles.length) return;
 
   const STORAGE_KEY = "site-theme";
   const LIGHT_CLASS = "theme-light";
@@ -126,25 +130,30 @@
   const applyTheme = (theme) => {
     const isLight = theme === "light";
     document.body.classList.toggle(LIGHT_CLASS, isLight);
-    toggle.textContent = isLight ? "☀️ Light" : "🌙 Dark";
-    toggle.setAttribute(
-      "aria-label",
-      isLight ? "Perjungti į tamsų režimą" : "Perjungti į šviesų režimą",
-    );
-    toggle.setAttribute(
-      "title",
-      isLight ? "Perjungti į tamsų režimą" : "Perjungti į šviesų režimą",
-    );
+
+    toggles.forEach((toggle) => {
+      toggle.textContent = isLight ? "☀️ Light" : "🌙 Dark";
+      toggle.setAttribute(
+        "aria-label",
+        isLight ? "Perjungti į tamsų režimą" : "Perjungti į šviesų režimą",
+      );
+      toggle.setAttribute(
+        "title",
+        isLight ? "Perjungti į tamsų režimą" : "Perjungti į šviesų režimą",
+      );
+    });
   };
 
   const saved = localStorage.getItem(STORAGE_KEY);
   const initialTheme = saved === "light" ? "light" : "dark";
   applyTheme(initialTheme);
 
-  toggle.addEventListener("click", () => {
-    const isLightNow = document.body.classList.contains(LIGHT_CLASS);
-    const nextTheme = isLightNow ? "dark" : "light";
-    applyTheme(nextTheme);
-    localStorage.setItem(STORAGE_KEY, nextTheme);
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const isLightNow = document.body.classList.contains(LIGHT_CLASS);
+      const nextTheme = isLightNow ? "dark" : "light";
+      applyTheme(nextTheme);
+      localStorage.setItem(STORAGE_KEY, nextTheme);
+    });
   });
 })();
